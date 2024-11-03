@@ -1,0 +1,33 @@
+version: "3.1"
+
+stories:
+  - story: greet and ask mood
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_ask_mood
+
+  - story: tell joke when happy
+    steps:
+      - intent: mood_happy
+      - action: utter_joke_happy
+
+  - story: tell joke when sad
+    steps:
+      - intent: mood_sad
+      - action: utter_joke_sad
+
+  - story: tell joke when bored
+    steps:
+      - intent: mood_bored
+      - action: utter_joke_bored
+
+  - story: tell joke when neutral
+    steps:
+      - intent: mood_neutral
+      - action: utter_joke_neutral
+
+  - story: goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye

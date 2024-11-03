@@ -1,0 +1,45 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - hello there
+    - hey there
+
+- intent: goodbye
+  examples: |
+    - goodbye
+    - bye
+    - see you
+    - see you later
+
+- intent: mood_happy
+  examples: |
+    - I'm feeling happy
+    - I’m so happy
+    - I'm in a great mood
+    - feeling good
+
+- intent: mood_sad
+  examples: |
+    - I'm feeling sad
+    - I'm a bit down
+    - feeling blue
+    - I'm not so good
+
+- intent: mood_bored
+  examples: |
+    - I'm bored
+    - nothing interesting
+    - I'm feeling bored
+    - bored here
+
+- intent: mood_neutral
+  examples: |
+    - I'm okay
+    - just feeling normal
+    - I'm neutral
+    - nothing much

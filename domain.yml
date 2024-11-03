@@ -1,0 +1,42 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - mood_happy
+  - mood_sad
+  - mood_bored
+  - mood_neutral
+  - ask_joke
+
+responses:
+  utter_greet:
+    - text: "Hello! I’m here to brighten your day with some jokes. 😊 How are you feeling?"
+
+  utter_goodbye:
+    - text: "Goodbye! Remember, there’s always a reason to smile! 😄"
+
+  utter_joke_happy:
+    - text: "Why don't scientists trust atoms? Because they make up everything! 😂"
+
+  utter_joke_sad:
+    - text: "Here's a pick-me-up: Why did the coffee file a police report? It got mugged! ☕️"
+
+  utter_joke_bored:
+    - text: "Here's something to break the boredom: I would tell you a chemistry joke... but I know I wouldn’t get a reaction. 😅"
+
+  utter_joke_neutral:
+    - text: "Want a classic? I told my wife she was drawing her eyebrows too high. She looked surprised. 😆"
+  
+  utter_ask_mood:
+    - text: "How are you feeling today? Happy, sad, bored, or just neutral?"
+  
+  utter_default_joke:
+    - text: "I'm always here to make you smile! Here's one: Parallel lines have so much in common… it’s a shame they’ll never meet. 😄"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
